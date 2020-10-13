@@ -1,6 +1,9 @@
 import React from 'react';
 import './Nav.css';
 
+import {BrowserRouter as Link} from 'react-router-dom';
+
+
 class Nav extends React.Component {
   // constructor(props){
   //   super(props)
@@ -11,9 +14,11 @@ class Nav extends React.Component {
             <div className="container">
               <nav>
                 <ul>
-                  {/* <li><a href="#">Главная</a></li>
-                  <li><a href="#">Пункты обмена</a></li>
-                  <li><a href="#">Контакты</a></li> */}
+                  <li><Link to="/">Главная</Link></li>
+                  <li><Link to="/about">О нас</Link></li>
+                  <li><Link to="/points">Пункты обмена</Link></li>
+                  <li><a href="/">Главная</a></li>
+                  <li><a href="/points">Пункты обмена</a></li>
                 </ul>
               </nav>
             </div>

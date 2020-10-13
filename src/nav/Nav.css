@@ -2,6 +2,7 @@
     background: #3b621c;
 }
 .header-nav li {
+    color: #fff;
     display: inline-block;
     padding: 15px 25px 15px;
 }

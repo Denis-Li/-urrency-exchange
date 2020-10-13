@@ -1,9 +1,15 @@
 import React from 'react';
 import './App.css';
 
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+
+
 import Header from './header/Header';
 import Footer from './footer/Footer';
 import Rate from './rate/Rate';
+import About from './about/About';
+import Points from './points/Points';
+import Other from './other/Other';
 
 class App extends React.Component {
   // constructor(props){
@@ -16,33 +22,18 @@ class App extends React.Component {
 
         <div className="container">
           <main>
-            <Rate />
-            <h3>Калькулятор обмена</h3>
-            <div className="block">
-              <div>Я хочу</div>
-              <div><label><input type="radio" name="radio" defaultValue="0" />купить</label></div>
-              <div><label><input type="radio" name="radio" defaultValue="1" />продать</label></div>
-            
-              <div>
-                <input type="number" defaultValue="150" />
-                <select name="" id="">
-                  <option value="USD">USD</option>
-                  <option value="RUB">RUB</option>
-                  <option value="EUR">EUR</option>
-                </select>
-              </div>
-              <div>
-                <h4>Результат</h4>
-                <ul className="calc-res">
-                  <li>EUR 150</li>
-                  <li>EUR 150</li>
-                  <li>EUR 150</li>
-                  <li>EUR 150</li>
-                </ul>
-              </div>
-            </div>
+            <Router>
+              <Switch>
+                <Route exact path="/" component={Rate} />
+                <Route exact path="/about" component={About} />
+                <Route exact path="/points" component={Points} />
+                <Route component={Other} />     
+              </Switch>
+
+            </Router>
           </main>
         </div>
+
         <div className="container" id="cookie_info">
           <div className="site-content">
             <div className="well">
