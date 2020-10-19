@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 
 
 import Header from './header/Header';
@@ -22,7 +22,6 @@ class App extends React.Component {
 
         <div className="container">
           <main>
-            <Router>
               <Switch>
                 <Route exact path="/" component={Rate} />
                 <Route exact path="/about" component={About} />
@@ -30,7 +29,6 @@ class App extends React.Component {
                 <Route component={Other} />     
               </Switch>
 
-            </Router>
           </main>
         </div>
 

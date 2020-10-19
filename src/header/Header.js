@@ -2,6 +2,8 @@ import React from 'react';
 import './Header.css';
 import Nav from '../nav/Nav';
 
+
+
 class Header extends React.Component {
   // constructor(props){
   //   super(props)
@@ -15,7 +17,10 @@ class Header extends React.Component {
               <h1 className="site-title">Lite Level</h1>
             </div>
           </div>
+
           <Nav />
+
+
         </header>
 
         
