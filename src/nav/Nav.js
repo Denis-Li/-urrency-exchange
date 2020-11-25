@@ -15,9 +15,9 @@ class Nav extends React.Component {
             <div className="container">
               <nav>
                 <ul>
-                  <li><Link to="/">Главная</Link></li>
-                  <li><Link to="/about">О нас</Link></li>
-                  <li><Link to="/points">Пункты обмена</Link></li>
+                  <li><Link to="/currency-exchange/">Главная</Link></li>
+                  <li><Link to="/currency-exchange/about">О нас</Link></li>
+                  <li><Link to="/currency-exchange/points">Пункты обмена</Link></li>
                 </ul>
               </nav>
             </div>
