@@ -23,7 +23,7 @@ class App extends React.Component {
         <div className="container">
           <main>
               <Switch>
-                <Route exact path="/" component={Rate} />
+                <Route exact path="/currency-exchange" component={Rate} />
                 <Route exact path="/about" component={About} />
                 <Route exact path="/points" component={Points} />
                 <Route component={Other} />     
