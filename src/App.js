@@ -7,9 +7,10 @@ import { Switch, Route } from 'react-router-dom';
 import Header from './header/Header';
 import Footer from './footer/Footer';
 import Rate from './rate/Rate';
-import About from './about/About';
-import Points from './points/Points';
+import About from './components/about/About';
+import Points from './containers/points/Points';
 import Other from './other/Other';
+import PointsList from './containers/PointsList';
 
 class App extends React.Component {
   // constructor(props){
@@ -24,8 +25,12 @@ class App extends React.Component {
           <main>
               <Switch>
                 <Route exact path="/currency-exchange/" component={Rate} />
-                <Route exact path="/currency-exchange/about" component={About} />
-                <Route exact path="/currency-exchange/points" component={Points} />
+                <Route exact path="/currency-exchange/about" component={PointsList} />
+                <Route exact path="/currency-exchange/points" component={Points}>
+                  <Points />
+                  <PointsList />
+                </Route>
+
                 <Route component={Other} />     
               </Switch>
 
