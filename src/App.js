@@ -22,7 +22,7 @@ class App extends React.Component {
           <main>
               <Switch>
                 <Route exact path="/currency-exchange/" component={Rate} />
-                <Route exact path="/currency-exchange/about" component={PointsList} />
+                <Route exact path="/currency-exchange/about" component={Other} />
                 <Route exact path="/currency-exchange/points" component={Points}>
                   <Points />
                   <PointsList />
