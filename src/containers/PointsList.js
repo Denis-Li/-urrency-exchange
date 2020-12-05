@@ -1,5 +1,5 @@
 import { connect } from "react-redux";
-import About from "../components/about/About";
+import List from "../components/list/List";
 
 function mapStateToProps (state) {
     const {points} = state;
@@ -9,4 +9,4 @@ function mapStateToProps (state) {
 export default connect(
     mapStateToProps,
     null
-)(About);
+)(List);

@@ -3,5 +3,14 @@
     margin: 50px auto;
 }
 .points-img {
+    display: flex;
     width: 25%;
+    margin: auto auto;
+    vertical-align: center;
+}
+.points-btn {
+    width: 170px;
+    background-color: #3b621c;
+    color: #fff;
+    cursor: pointer;
 }

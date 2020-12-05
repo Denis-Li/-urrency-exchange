@@ -13,8 +13,8 @@ class Nav extends React.Component {
               <nav>
                 <ul>
                   <li><Link to="/currency-exchange/">Главная</Link></li>
-                  <li><Link to="/currency-exchange/about">О нас</Link></li>
                   <li><Link to="/currency-exchange/points">Памятные монеты</Link></li>
+                  <li><Link to="/currency-exchange/about">О нас</Link></li>
                 </ul>
               </nav>
             </div>

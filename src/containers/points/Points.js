@@ -26,7 +26,7 @@ const Points = () => {
               <input type="text" name="image" defaultValue="https://cdn.monetnik.ru/storage/market-lot/24/57/72424/200227_mainViewLot.jpg" />
             </div>
             <div>
-              <button type="submit">Add new coin</button>
+              <button className="points-btn" type="submit">Add new coin</button>
             </div>
           </form>
       </div>

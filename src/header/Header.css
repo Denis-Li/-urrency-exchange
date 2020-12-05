@@ -11,6 +11,7 @@ header {
   padding: 20px 0 25px;
 }
 .site-title {
+  padding-left: 20px;
   color: #fff;
 }
 .animate-dropdown {
