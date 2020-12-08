@@ -1,0 +1,20 @@
+[
+    {
+        "articul": "284s",
+        "title" : "apple",
+        "cost" : 330,
+        "image" : "https://cdn2.iconfinder.com/data/icons/food-icons-6/200/food_apple-512.png"
+    },
+    {
+        "articul": "285s",
+        "title" : "grape", 
+        "cost" : 550, 
+        "image" : "https://cdn2.iconfinder.com/data/icons/food-icons-6/200/food_grapes-512.png"
+    },
+    {
+        "articul": "264s",
+        "title" : "strawberry", 
+        "cost" : 660, 
+        "image" : "https://cdn2.iconfinder.com/data/icons/food-icons-6/200/food_strawberry-512.png"
+    }
+]

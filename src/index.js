@@ -11,7 +11,7 @@ import {Provider} from 'react-redux';
 import rootReduser from './reducers';
 import initialState from './store/initialState';
 
-
+// import store2 from './store/index';
 const store = createStore(rootReduser, initialState);
 
 ReactDOM.render(

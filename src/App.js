@@ -10,6 +10,7 @@ import Rate from './rate/Rate';
 import Points from './containers/points/Points';
 import Other from './other/Other';
 import PointsList from './containers/PointsList';
+import GoodsList from './containers/GoodsList';
 
 class App extends React.Component {
   render(){
@@ -22,11 +23,11 @@ class App extends React.Component {
               <Switch>
                 <Route exact path="/currency-exchange/" component={Rate} />
                 <Route exact path="/currency-exchange/points" component={Points}>
-                <Route exact path="/currency-exchange/about" component={Other} />
                   <Points />
                   <PointsList />
                 </Route>
-
+                <Route exact path="/currency-exchange/about" component={GoodsList} />
+                  <GoodsList />
                 <Route component={Other} />     
               </Switch>
 
